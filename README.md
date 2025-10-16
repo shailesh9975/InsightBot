@@ -117,6 +117,22 @@ Testing
 - Wrote comprehensive unit tests (`tests/test_data_processor.py`) for `DataProcessor` functionalities, including loading, splitting, vector store creation/loading, and API key handling.
 - Verified local ingestion and all tests passed.
 
+### Day 2: Retrieval & Generation Core
+- Implemented `src/retriever.py` with `DocumentRetriever` class to:
+    - Initialize with a Chroma vector store.
+    - Retrieve top-k relevant document chunks based on a query using `vectorstore.as_retriever()`.
+    - Concatenate retrieved document content into a single context string.
+- Implemented `src/generator.py` with `ResponseGenerator` class (though its direct usage is simplified by `RetrievalQA`):
+    - Initialize `ChatOpenAI` with configurable model and temperature.
+    - Defined a robust chat prompt template for RAG.
+    - `generate_response` method for LLM interaction (primarily for testing direct calls).
+- Implemented `src/insight_bot.py` with `InsightBot` class:
+    - Orchestrates the RAG flow: loads vector store, sets up retriever and LLM.
+    - Uses LangChain's `RetrievalQA.from_chain_type` for streamlined RAG processing.
+    - `ask` method to take a query and return an answer with source documents.
+- Wrote unit and integration tests for `DocumentRetriever` (`tests/test_retriever.py`) and `InsightBot` (`tests/test_insight_bot.py`), including mocked LLM calls for efficiency and real API calls for full integration.
+- Verified all new tests passed, confirming retrieval and generation logic.
+
 
 
 ##License

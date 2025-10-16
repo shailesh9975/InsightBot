@@ -30,3 +30,10 @@ chroma_db/  # Our vector store directory
 htmlcov/
 .coverage
 
+
+# Docker
+.dockerignore
+docker-compose.yml # If we use it later
+Dockerfile.build
+build/
+*.tar.gz
