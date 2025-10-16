@@ -3,7 +3,7 @@ import os
 from typing import List
 from langchain_community.document_loaders import PyPDFLoader, TextLoader, DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings import OpenAIEmbeddings # Updated import for OpenAIEmbeddings
+from langchain_community.embeddings import OpenAIEmbeddings # Updated import for OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma # Updated import for Chroma
 from langchain.schema import Document
 from src.config import RAW_DATA_DIR, CHROMA_DB_DIR, EMBEDDING_MODEL_NAME, CHUNK_SIZE, CHUNK_OVERLAP, OPENAI_API_KEY
