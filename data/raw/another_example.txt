@@ -1,0 +1,12 @@
+# data/raw/another_example.txt
+RAG System Components
+
+A typical RAG system consists of several key components:
+
+1.  **Data Ingestion:** Loading raw documents from various sources.
+2.  **Indexing:** Processing and storing documents in a searchable format, often involving text splitting and embedding.
+3.  **Vector Database:** A specialized database (like ChromaDB, Pinecone, FAISS) to store embeddings and perform similarity searches.
+4.  **Retrieval:** Fetching the most relevant document chunks based on a user's query.
+5.  **Generation:** Using an LLM to formulate an answer by incorporating the retrieved context.
+
+Each component plays a vital role in ensuring the chatbot can provide relevant and grounded responses, minimizing hallucinations.

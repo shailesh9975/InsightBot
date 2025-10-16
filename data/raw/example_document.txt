@@ -1,0 +1,14 @@
+# data/raw/example_document.txt
+Project InsightBot
+
+InsightBot is designed to be a personalized knowledge assistant. It leverages Retrieval-Augmented Generation (RAG) to provide accurate answers based on your own documents.
+
+Key features include:
+- Document ingestion from various formats (PDF, TXT).
+- Smart document chunking for efficient information retrieval.
+- Utilization of vector databases (ChromaDB) for semantic search.
+- Integration with Large Language Models (LLMs) like OpenAI's GPT-3.5 for generating responses.
+
+The project is built with Python, LangChain, OpenAI, ChromaDB, and Streamlit for the user interface. Our goal is to make it production-ready with thorough testing and clear documentation.
+
+Future enhancements may include support for more document types, advanced chunking strategies, and different LLM providers.
