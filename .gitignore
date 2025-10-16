@@ -1,0 +1,32 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python specific
+__pycache__/
+*.pyc
+*.egg-info/
+*.pytest_cache/
+
+# Data and Embeddings
+data/processed/
+data/embeddings/
+chroma_db/  # Our vector store directory
+*.pkl
+*.bin
+
+# Environment variables
+.env
+
+# Jupyter Notebooks (if used for exploration)
+.ipynb_checkpoints/
+
+# IDE specific files
+.idea/      # PyCharm
+.vscode/    # VSCode
+
+# Test reports
+htmlcov/
+.coverage
+
